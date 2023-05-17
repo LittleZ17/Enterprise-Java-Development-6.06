@@ -22,15 +22,30 @@ if (hacker1.length === hacker2.length) {
 // 3.1 Print all the characters of the driver’s name, separated by a space and in capitals i.e. "J O H N"
 //console.log(hacker1.toUpperCase())
 
-navigatorNew = hacker1.toUpperCase().split('').join(' ');
+let navigatorNew = '';
 
+for (var i = 0; i < hacker1.length; i++) {
+  navigatorNew += hacker1[i].toUpperCase() + " ";
+}
 console.log(navigatorNew);
+
+//Opción con metodos de array
+// navigatorNew = hacker1.toUpperCase().split('').join(' ');
+// console.log(navigatorNew);
 
 // 3.2 Print all the characters of the navigator’s name, in reverse order. i.e. "nhoJ"
 
-navigatorReverse = hacker1.split('').reverse().join('');
+let navigatorReverse = "";
+
+for (let i = hacker1.length - 1; i >= 0; i--) {
+  navigatorReverse += hacker1[i];
+}
 
 console.log(navigatorReverse);
+
+// navigatorReverse = hacker1.split('').reverse().join('');
+
+// console.log(navigatorReverse);
 
 // 3.3 Depending on the lexicographic order of the strings, print:
 
